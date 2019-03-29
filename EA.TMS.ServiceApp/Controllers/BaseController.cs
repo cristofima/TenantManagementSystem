@@ -20,15 +20,15 @@ namespace EA.TMS.ServiceApp.Controllers
         public IActionManager ActionManager { get { return _manager; } }
         public ILogger Logger { get { return _logger; } }
 
-        public Exception LogException(Exception ex)
+        /*public Exception LogException(Exception ex)
         {
             string errorMessage = LoggerHelper.GetExceptionDetails(ex);
             _logger.LogError(LoggingEvents.SERVICE_ERROR, ex, errorMessage);
             throw ex;
-            /*HttpResponseMessage message = new HttpResponseMessage();
+            HttpResponseMessage message = new HttpResponseMessage();
             message.Content = new StringContent(errorMessage);
             message.StatusCode = System.Net.HttpStatusCode.ExpectationFailed;
-            throw new HttpResponseException(message);*/
-        }
+            throw new HttpResponseException(message);
+        }*/
     }
 }

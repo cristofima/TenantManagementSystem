@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.28721.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.TMS.Common", "EA.TMS.Common\EA.TMS.Common.csproj", "{7D06ABAB-508D-4E94-AD1D-C7F1601BD4C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.TMS.DataAccess", "EA.TMS.DataAccess\EA.TMS.DataAccess.csproj", "{7BB622CA-BC6E-47D0-8F25-45C7ACD49092}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.TMS.DataAccess", "EA.TMS.DataAccess\EA.TMS.DataAccess.csproj", "{7BB622CA-BC6E-47D0-8F25-45C7ACD49092}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.TMS.Business", "EA.TMS.Business\EA.TMS.Business.csproj", "{40338A2A-AB95-4117-A50F-49DD853C55F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.TMS.Business", "EA.TMS.Business\EA.TMS.Business.csproj", "{40338A2A-AB95-4117-A50F-49DD853C55F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EA.TMS.ServiceApp", "EA.TMS.ServiceApp\EA.TMS.ServiceApp.csproj", "{430FD0DC-CE26-4D86-BD0D-25DFA5A13E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EA.TMS.ServiceApp", "EA.TMS.ServiceApp\EA.TMS.ServiceApp.csproj", "{430FD0DC-CE26-4D86-BD0D-25DFA5A13E76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

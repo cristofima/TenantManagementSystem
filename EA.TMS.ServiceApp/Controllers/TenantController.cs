@@ -13,6 +13,8 @@ namespace EA.TMS.ServiceApp.Controllers
     [ApiController]
     [Authorize]
     [LoggingActionFilter]
+    [Produces("application/json")]
+    [Consumes("application/json")]
     public class TenantController : BaseController
     {
         private ITenantManager _tenantManager;
@@ -23,8 +25,6 @@ namespace EA.TMS.ServiceApp.Controllers
             _tenantManager = manager;
             _logger = logger;
         }
-
-        // GET: api/values
 
         [TransactionActionFilter()]
         [HttpGet]
@@ -90,6 +90,7 @@ namespace EA.TMS.ServiceApp.Controllers
             }
         }
 
+        [HttpGet("{tenantID}")]
         public IActionResult Get(long tenantID)
         {
             try

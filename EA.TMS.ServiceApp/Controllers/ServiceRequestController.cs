@@ -12,6 +12,8 @@ namespace EA.TMS.ServiceApp.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [LoggingActionFilter]
+    [Produces("application/json")]
+    [Consumes("application/json")]
     public class ServiceRequestController : BaseController
     {
         private IServiceRequestManager _manager;
@@ -23,14 +25,12 @@ namespace EA.TMS.ServiceApp.Controllers
             _logger = logger;
         }
 
-        // GET: api/values
         [HttpGet]
         public IEnumerable<TenantServiceRequest> GetTenantsRequests()
         {
             return _manager.GetAllTenantServiceRequests();
         }
 
-        // POST api/values
         [HttpPost]
         public void Post(ServiceRequest serviceRequest)
         {
@@ -40,7 +40,7 @@ namespace EA.TMS.ServiceApp.Controllers
             }
             catch (Exception ex)
             {
-                throw LogException(ex);
+                
             }
         }
     }
